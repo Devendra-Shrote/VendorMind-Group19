@@ -22,7 +22,7 @@ def get_nvidia_llm(
     api_key = settings.NVIDIA_API_KEY or os.getenv("NVIDIA_API_KEY")
     selected_model = model_name or settings.DEFAULT_MODEL
     
-    if not api_key or api_key == "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":
+    if not api_key or api_key == "nvapi-your-actual-key-here":
         raise ValueError("Missing valid NVIDIA_API_KEY in .env file or environment.")
         
     return ChatNVIDIA(
